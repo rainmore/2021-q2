@@ -1,5 +1,6 @@
 import type A from './a';
 import type B from './b';
+import CC from './c.js';
 import type C from './c.js';
 
 /*
@@ -29,9 +30,18 @@ export interface D {
     b: B;
 }
 
-class DD extends C {
+export class DD extends CC {
     a = 1;   
+    d: C;
+    constructor(d: C) {
+        super();
+        this.d = d;
+    }
 }
+
+// export class DDD extends CC {
+//     a = 1;   
+// }
 
 export default D;
 

@@ -8,7 +8,6 @@ import type B from './b';
 import type C from './c.js';
 */
 
-
 /*
 namespace ns {
     export interface C {
